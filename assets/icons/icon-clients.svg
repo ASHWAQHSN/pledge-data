@@ -1,0 +1,26 @@
+<!-- Clients Icon - Person outline with circle -->
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4e4c1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#CDAA00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f4e4c1;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Head circle -->
+  <circle cx="256" cy="200" r="45" fill="none" stroke="url(#goldGrad3)" stroke-width="3" filter="url(#glow3)"/>
+
+  <!-- Shoulders and body -->
+  <path d="M 200 260 Q 200 250 210 250 L 302 250 Q 312 250 312 260 L 320 340 Q 320 350 310 350 L 202 350 Q 192 350 192 340 Z" fill="none" stroke="url(#goldGrad3)" stroke-width="3" stroke-linejoin="round" filter="url(#glow3)"/>
+
+  <!-- Outer circle frame -->
+  <circle cx="256" cy="256" r="120" fill="none" stroke="url(#goldGrad3)" stroke-width="3" filter="url(#glow3)"/>
+</svg>

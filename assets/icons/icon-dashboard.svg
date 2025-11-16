@@ -1,0 +1,23 @@
+<!-- Dashboard Icon - 4-square grid -->
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4e4c1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#CDAA00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f4e4c1;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 4-square grid -->
+  <rect x="140" y="140" width="120" height="120" rx="12" fill="none" stroke="url(#goldGrad1)" stroke-width="3" filter="url(#glow1)"/>
+  <rect x="252" y="140" width="120" height="120" rx="12" fill="none" stroke="url(#goldGrad1)" stroke-width="3" filter="url(#glow1)"/>
+  <rect x="140" y="252" width="120" height="120" rx="12" fill="none" stroke="url(#goldGrad1)" stroke-width="3" filter="url(#glow1)"/>
+  <rect x="252" y="252" width="120" height="120" rx="12" fill="none" stroke="url(#goldGrad1)" stroke-width="3" filter="url(#glow1)"/>
+</svg>
