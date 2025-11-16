@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pledge Data - Branding Assets Preview</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+      background: #0e0e0e;
+      color: #e6e6e6;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #f4e4c1;
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #9a9a9a;
+      font-size: 1rem;
+      letter-spacing: 0.06em;
+      margin-bottom: 3rem;
+    }
+
+    .section {
+      background: #161616;
+      border: 1px solid #202020;
+      border-radius: 14px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    .section h2 {
+      color: #CDAA00;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.06em;
+      border-left: 3px solid #CDAA00;
+      padding-left: 1rem;
+    }
+
+    .asset-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .asset-item {
+      background: #0e0e0e;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .asset-preview {
+      background: #0e0e0e;
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 1rem;
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .asset-preview img,
+    .asset-preview object {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .asset-preview.icon {
+      max-width: 256px;
+      margin: 0 auto;
+    }
+
+    .asset-preview.splash {
+      max-height: 400px;
+      overflow: hidden;
+    }
+
+    .asset-preview.splash object {
+      max-height: 400px;
+    }
+
+    .asset-name {
+      color: #f4e4c1;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .asset-details {
+      color: #9a9a9a;
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background: #CDAA00;
+      color: #111;
+      padding: 0.6rem 1.5rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      transition: all 0.15s ease;
+    }
+
+    .download-btn:hover {
+      background: #e0bb00;
+      transform: translateY(-1px);
+    }
+
+    .color-palette {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .color-swatch {
+      text-align: center;
+    }
+
+    .color-box {
+      width: 100%;
+      height: 80px;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+      border: 1px solid #2a2a2a;
+    }
+
+    .color-name {
+      color: #e6e6e6;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .color-value {
+      color: #9a9a9a;
+      font-size: 0.75rem;
+      font-family: 'Courier New', monospace;
+    }
+
+    .instructions {
+      background: rgba(205, 170, 0, 0.08);
+      border: 1px solid rgba(205, 170, 0, 0.3);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .instructions h3 {
+      color: #fce9a2;
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .instructions p,
+    .instructions ul {
+      color: #f4e4c1;
+      font-size: 0.9rem;
+    }
+
+    .instructions ul {
+      margin-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .instructions li {
+      margin-bottom: 0.5rem;
+    }
+
+    .instructions code {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>PLEDGE DATA</h1>
+    <p class="subtitle">BRANDING ASSETS PREVIEW</p>
+
+    <!-- App Icon -->
+    <div class="section">
+      <h2>1. App Icon</h2>
+      <div class="asset-grid">
+        <div class="asset-item">
+          <div class="asset-preview icon">
+            <object data="icon.svg" type="image/svg+xml" width="256" height="256"></object>
+          </div>
+          <div class="asset-name">App Icon</div>
+          <div class="asset-details">512×512 (scalable SVG)</div>
+          <a href="icon.svg" download class="download-btn">Download SVG</a>
+        </div>
+      </div>
+      <div class="instructions">
+        <h3>Usage Instructions:</h3>
+        <p>This icon is perfect for app launchers, PWA icons, and favicons. Export to PNG at 192px and 512px for web use.</p>
+      </div>
+    </div>
+
+    <!-- Gold Emblem -->
+    <div class="section">
+      <h2>2. Gold Emblem (Standalone Symbol)</h2>
+      <div class="asset-grid">
+        <div class="asset-item">
+          <div class="asset-preview icon">
+            <object data="emblem.svg" type="image/svg+xml" width="256" height="256"></object>
+          </div>
+          <div class="asset-name">Gold Emblem</div>
+          <div class="asset-details">256×256 (scalable SVG)</div>
+          <a href="emblem.svg" download class="download-btn">Download SVG</a>
+        </div>
+      </div>
+      <div class="instructions">
+        <h3>Usage Instructions:</h3>
+        <p>Use this emblem for loading states, watermarks, and branding marks. Works perfectly on dark backgrounds.</p>
+      </div>
+    </div>
+
+    <!-- Text Logo -->
+    <div class="section">
+      <h2>3. Text Logo</h2>
+      <div class="asset-grid">
+        <div class="asset-item">
+          <div class="asset-preview">
+            <object data="logo-text.svg" type="image/svg+xml" width="100%" height="auto"></object>
+          </div>
+          <div class="asset-name">Pledge Data Logo</div>
+          <div class="asset-details">800×200 (scalable SVG)</div>
+          <a href="logo-text.svg" download class="download-btn">Download SVG</a>
+        </div>
+      </div>
+      <div class="instructions">
+        <h3>Usage Instructions:</h3>
+        <p>Full branding logo with text. Perfect for headers, marketing materials, and splash screens.</p>
+      </div>
+    </div>
+
+    <!-- Splash Screen -->
+    <div class="section">
+      <h2>4. Splash Screen (9:16 Mobile)</h2>
+      <div class="asset-grid">
+        <div class="asset-item">
+          <div class="asset-preview splash">
+            <object data="splash.svg" type="image/svg+xml" width="auto" height="400"></object>
+          </div>
+          <div class="asset-name">Splash Screen</div>
+          <div class="asset-details">1080×1920 (9:16 ratio)</div>
+          <a href="splash.svg" download class="download-btn">Download SVG</a>
+        </div>
+      </div>
+      <div class="instructions">
+        <h3>Usage Instructions:</h3>
+        <p>Mobile app launch screen with cinematic lighting and animated loading indicator. Optimized for portrait mode.</p>
+      </div>
+    </div>
+
+    <!-- Header Banner -->
+    <div class="section">
+      <h2>5. Header Banner</h2>
+      <div class="asset-grid">
+        <div class="asset-item">
+          <div class="asset-preview">
+            <object data="banner.svg" type="image/svg+xml" width="100%" height="auto"></object>
+          </div>
+          <div class="asset-name">Header Banner</div>
+          <div class="asset-details">1200×300 (wide horizontal)</div>
+          <a href="banner.svg" download class="download-btn">Download SVG</a>
+        </div>
+      </div>
+      <div class="instructions">
+        <h3>Usage Instructions:</h3>
+        <p>Wide banner for dashboard headers, email headers, or web use. Features abstract data visualization.</p>
+      </div>
+    </div>
+
+    <!-- Color Palette -->
+    <div class="section">
+      <h2>Brand Colors</h2>
+      <div class="color-palette">
+        <div class="color-swatch">
+          <div class="color-box" style="background: #0e0e0e;"></div>
+          <div class="color-name">Deep Black</div>
+          <div class="color-value">#0e0e0e</div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-box" style="background: #161616;"></div>
+          <div class="color-name">Card Black</div>
+          <div class="color-value">#161616</div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-box" style="background: #CDAA00;"></div>
+          <div class="color-name">Rich Gold</div>
+          <div class="color-value">#CDAA00</div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-box" style="background: #f4e4c1;"></div>
+          <div class="color-name">Soft Gold</div>
+          <div class="color-value">#f4e4c1</div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-box" style="background: #e6e6e6;"></div>
+          <div class="color-name">Primary Text</div>
+          <div class="color-value">#e6e6e6</div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-box" style="background: #9a9a9a;"></div>
+          <div class="color-name">Muted Text</div>
+          <div class="color-value">#9a9a9a</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Export Instructions -->
+    <div class="section">
+      <h2>PNG Export Instructions</h2>
+      <div class="instructions">
+        <h3>Convert SVG to PNG:</h3>
+        <p>To create PNG versions of the app icons, use one of these methods:</p>
+        <ul>
+          <li><strong>Online:</strong> Upload to <code>cloudconvert.com/svg-to-png</code></li>
+          <li><strong>Command Line:</strong> <code>inkscape icon.svg --export-filename=icon-192.png --export-width=192</code></li>
+          <li><strong>Browser:</strong> Right-click on the preview above → "Save Image As" (may vary by browser)</li>
+        </ul>
+        <p style="margin-top: 1rem;">Required sizes: <strong>192×192px</strong> and <strong>512×512px</strong></p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

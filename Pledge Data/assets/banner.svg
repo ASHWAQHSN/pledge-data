@@ -1,0 +1,144 @@
+<!-- Pledge Data - Header Banner (Wide Horizontal) -->
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gold gradient -->
+    <linearGradient id="bannerGold" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" style="stop-color:#CDAA00;stop-opacity:0.3" />
+      <stop offset="25%" style="stop-color:#f4e4c1;stop-opacity:0.6" />
+      <stop offset="50%" style="stop-color:#CDAA00;stop-opacity:0.8" />
+      <stop offset="75%" style="stop-color:#f4e4c1;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#CDAA00;stop-opacity:0.3" />
+    </linearGradient>
+
+    <!-- Vertical gradient for depth -->
+    <linearGradient id="depthGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0e0e0e;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="bannerGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Soft glow for particles -->
+    <filter id="particleGlow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#depthGradient)"/>
+
+  <!-- Subtle background pattern - geometric data grid -->
+  <g opacity="0.06">
+    <line x1="0" y1="75" x2="1200" y2="75" stroke="#CDAA00" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="1200" y2="150" stroke="#CDAA00" stroke-width="0.5"/>
+    <line x1="0" y1="225" x2="1200" y2="225" stroke="#CDAA00" stroke-width="0.5"/>
+    <line x1="150" y1="0" x2="150" y2="300" stroke="#CDAA00" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#CDAA00" stroke-width="0.5"/>
+    <line x1="450" y1="0" x2="450" y2="300" stroke="#CDAA00" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="300" stroke="#CDAA00" stroke-width="0.5"/>
+    <line x1="750" y1="0" x2="750" y2="300" stroke="#CDAA00" stroke-width="0.5"/>
+    <line x1="900" y1="0" x2="900" y2="300" stroke="#CDAA00" stroke-width="0.5"/>
+    <line x1="1050" y1="0" x2="1050" y2="300" stroke="#CDAA00" stroke-width="0.5"/>
+  </g>
+
+  <!-- Data wave visualization - abstract flowing lines -->
+  <g opacity="0.4" filter="url(#bannerGlow)">
+    <!-- Wave 1 -->
+    <path d="M 0 150 Q 100 120 200 140 T 400 150 T 600 145 T 800 155 T 1000 148 T 1200 150"
+          fill="none" stroke="url(#bannerGold)" stroke-width="1.5"/>
+
+    <!-- Wave 2 (offset) -->
+    <path d="M 0 170 Q 100 145 200 165 T 400 175 T 600 168 T 800 178 T 1000 172 T 1200 170"
+          fill="none" stroke="url(#bannerGold)" stroke-width="1.2" opacity="0.7"/>
+
+    <!-- Wave 3 (subtle) -->
+    <path d="M 0 130 Q 100 108 200 125 T 400 132 T 600 128 T 800 135 T 1000 130 T 1200 132"
+          fill="none" stroke="url(#bannerGold)" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Left emblem accent -->
+  <g transform="translate(80, 150)">
+    <circle cx="0" cy="0" r="8" fill="url(#bannerGold)" filter="url(#particleGlow)"/>
+    <circle cx="0" cy="0" r="25" fill="none" stroke="url(#bannerGold)" stroke-width="1.5" opacity="0.5" filter="url(#bannerGlow)"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="url(#bannerGold)" stroke-width="1" opacity="0.3" filter="url(#bannerGlow)"/>
+    <circle cx="0" cy="-25" r="3" fill="url(#bannerGold)" filter="url(#bannerGlow)"/>
+    <circle cx="25" cy="0" r="3" fill="url(#bannerGold)" filter="url(#bannerGlow)"/>
+    <circle cx="0" cy="25" r="3" fill="url(#bannerGold)" filter="url(#bannerGlow)"/>
+    <circle cx="-25" cy="0" r="3" fill="url(#bannerGold)" filter="url(#bannerGlow)"/>
+  </g>
+
+  <!-- Right emblem accent (mirrored) -->
+  <g transform="translate(1120, 150)">
+    <circle cx="0" cy="0" r="8" fill="url(#bannerGold)" filter="url(#particleGlow)"/>
+    <circle cx="0" cy="0" r="25" fill="none" stroke="url(#bannerGold)" stroke-width="1.5" opacity="0.5" filter="url(#bannerGlow)"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="url(#bannerGold)" stroke-width="1" opacity="0.3" filter="url(#bannerGlow)"/>
+    <circle cx="0" cy="-25" r="3" fill="url(#bannerGold)" filter="url(#bannerGlow)"/>
+    <circle cx="25" cy="0" r="3" fill="url(#bannerGold)" filter="url(#bannerGlow)"/>
+    <circle cx="0" cy="25" r="3" fill="url(#bannerGold)" filter="url(#bannerGlow)"/>
+    <circle cx="-25" cy="0" r="3" fill="url(#bannerGold)" filter="url(#bannerGlow)"/>
+  </g>
+
+  <!-- Floating data particles -->
+  <g opacity="0.4" filter="url(#particleGlow)">
+    <circle cx="250" cy="100" r="2" fill="#CDAA00"/>
+    <circle cx="420" cy="85" r="1.5" fill="#f4e4c1"/>
+    <circle cx="580" cy="110" r="2" fill="#CDAA00"/>
+    <circle cx="730" cy="90" r="1.5" fill="#f4e4c1"/>
+    <circle cx="890" cy="105" r="2" fill="#CDAA00"/>
+    <circle cx="320" cy="200" r="1.5" fill="#f4e4c1"/>
+    <circle cx="490" cy="215" r="2" fill="#CDAA00"/>
+    <circle cx="650" cy="195" r="1.5" fill="#f4e4c1"/>
+    <circle cx="810" cy="210" r="2" fill="#CDAA00"/>
+    <circle cx="970" cy="190" r="1.5" fill="#f4e4c1"/>
+  </g>
+
+  <!-- Abstract geometric data nodes connected -->
+  <g opacity="0.25" filter="url(#bannerGlow)">
+    <!-- Left cluster -->
+    <circle cx="200" cy="150" r="4" fill="url(#bannerGold)"/>
+    <circle cx="230" cy="130" r="3" fill="url(#bannerGold)"/>
+    <circle cx="240" cy="165" r="3" fill="url(#bannerGold)"/>
+    <line x1="200" y1="150" x2="230" y2="130" stroke="url(#bannerGold)" stroke-width="1"/>
+    <line x1="200" y1="150" x2="240" y2="165" stroke="url(#bannerGold)" stroke-width="1"/>
+
+    <!-- Center cluster -->
+    <circle cx="600" cy="150" r="4" fill="url(#bannerGold)"/>
+    <circle cx="580" cy="125" r="3" fill="url(#bannerGold)"/>
+    <circle cx="620" cy="175" r="3" fill="url(#bannerGold)"/>
+    <circle cx="640" cy="140" r="3" fill="url(#bannerGold)"/>
+    <line x1="600" y1="150" x2="580" y2="125" stroke="url(#bannerGold)" stroke-width="1"/>
+    <line x1="600" y1="150" x2="620" y2="175" stroke="url(#bannerGold)" stroke-width="1"/>
+    <line x1="600" y1="150" x2="640" y2="140" stroke="url(#bannerGold)" stroke-width="1"/>
+
+    <!-- Right cluster -->
+    <circle cx="1000" cy="150" r="4" fill="url(#bannerGold)"/>
+    <circle cx="970" cy="135" r="3" fill="url(#bannerGold)"/>
+    <circle cx="1010" cy="170" r="3" fill="url(#bannerGold)"/>
+    <line x1="1000" y1="150" x2="970" y2="135" stroke="url(#bannerGold)" stroke-width="1"/>
+    <line x1="1000" y1="150" x2="1010" y2="170" stroke="url(#bannerGold)" stroke-width="1"/>
+  </g>
+
+  <!-- Bottom edge glow line -->
+  <line x1="0" y1="299" x2="1200" y2="299"
+        stroke="url(#bannerGold)"
+        stroke-width="1"
+        opacity="0.4"
+        filter="url(#bannerGlow)"/>
+
+  <!-- Top edge subtle line -->
+  <line x1="0" y1="1" x2="1200" y2="1"
+        stroke="url(#bannerGold)"
+        stroke-width="0.5"
+        opacity="0.2"/>
+</svg>

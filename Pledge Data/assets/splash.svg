@@ -1,0 +1,145 @@
+<!-- Pledge Data - Splash Screen (9:16 mobile ratio) -->
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Premium gold gradient -->
+    <linearGradient id="splashGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4e4c1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#CDAA00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9a7f00;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Radial gradient for ambient glow -->
+    <radialGradient id="ambientGlow">
+      <stop offset="0%" style="stop-color:#CDAA00;stop-opacity:0.15" />
+      <stop offset="50%" style="stop-color:#CDAA00;stop-opacity:0.05" />
+      <stop offset="100%" style="stop-color:#0e0e0e;stop-opacity:0" />
+    </radialGradient>
+
+    <!-- Premium glow filter -->
+    <filter id="splashGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Intense center glow -->
+    <filter id="coreGlow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="12" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Light rays effect -->
+    <filter id="rays">
+      <feGaussianBlur stdDeviation="30" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Pure black background -->
+  <rect width="1080" height="1920" fill="#0e0e0e"/>
+
+  <!-- Ambient background glow -->
+  <circle cx="540" cy="960" r="600" fill="url(#ambientGlow)"/>
+
+  <!-- Subtle light rays from center -->
+  <g opacity="0.12" filter="url(#rays)">
+    <line x1="540" y1="960" x2="540" y2="200" stroke="url(#splashGold)" stroke-width="3"/>
+    <line x1="540" y1="960" x2="900" y2="400" stroke="url(#splashGold)" stroke-width="2"/>
+    <line x1="540" y1="960" x2="1000" y2="960" stroke="url(#splashGold)" stroke-width="3"/>
+    <line x1="540" y1="960" x2="900" y2="1520" stroke="url(#splashGold)" stroke-width="2"/>
+    <line x1="540" y1="960" x2="540" y2="1720" stroke="url(#splashGold)" stroke-width="3"/>
+    <line x1="540" y1="960" x2="180" y2="1520" stroke="url(#splashGold)" stroke-width="2"/>
+    <line x1="540" y1="960" x2="80" y2="960" stroke="url(#splashGold)" stroke-width="3"/>
+    <line x1="540" y1="960" x2="180" y2="400" stroke="url(#splashGold)" stroke-width="2"/>
+  </g>
+
+  <!-- Floating particles (subtle) -->
+  <g opacity="0.3">
+    <circle cx="300" cy="600" r="2" fill="#CDAA00"/>
+    <circle cx="780" cy="720" r="1.5" fill="#f4e4c1"/>
+    <circle cx="200" cy="1100" r="2" fill="#CDAA00"/>
+    <circle cx="850" cy="1250" r="1.5" fill="#f4e4c1"/>
+    <circle cx="420" cy="1450" r="2" fill="#CDAA00"/>
+    <circle cx="680" cy="500" r="1.5" fill="#f4e4c1"/>
+    <circle cx="150" cy="800" r="2" fill="#CDAA00"/>
+    <circle cx="920" cy="1080" r="1.5" fill="#f4e4c1"/>
+  </g>
+
+  <!-- Large centered emblem -->
+  <g transform="translate(540, 960)">
+    <!-- Core -->
+    <circle cx="0" cy="0" r="45" fill="url(#splashGold)" filter="url(#coreGlow)"/>
+
+    <!-- Inner hexagon -->
+    <path d="M 0 -85 L 73.6 -42.5 L 73.6 42.5 L 0 85 L -73.6 42.5 L -73.6 -42.5 Z"
+          fill="none" stroke="url(#splashGold)" stroke-width="4" opacity="0.8" filter="url(#splashGlow)"/>
+
+    <!-- Middle orbit -->
+    <circle cx="0" cy="0" r="130" fill="none" stroke="url(#splashGold)" stroke-width="3.5" opacity="0.7" filter="url(#splashGlow)"/>
+
+    <!-- Outer orbit -->
+    <circle cx="0" cy="0" r="200" fill="none" stroke="url(#splashGold)" stroke-width="2.5" opacity="0.5" filter="url(#splashGlow)"/>
+
+    <!-- Cardinal data nodes -->
+    <circle cx="0" cy="-200" r="18" fill="url(#splashGold)" filter="url(#splashGlow)"/>
+    <circle cx="200" cy="0" r="18" fill="url(#splashGold)" filter="url(#splashGlow)"/>
+    <circle cx="0" cy="200" r="18" fill="url(#splashGold)" filter="url(#splashGlow)"/>
+    <circle cx="-200" cy="0" r="18" fill="url(#splashGold)" filter="url(#splashGlow)"/>
+
+    <!-- Connection beams -->
+    <line x1="0" y1="-45" x2="0" y2="-182" stroke="url(#splashGold)" stroke-width="3" opacity="0.6" filter="url(#splashGlow)"/>
+    <line x1="45" y1="0" x2="182" y2="0" stroke="url(#splashGold)" stroke-width="3" opacity="0.6" filter="url(#splashGlow)"/>
+    <line x1="0" y1="45" x2="0" y2="182" stroke="url(#splashGold)" stroke-width="3" opacity="0.6" filter="url(#splashGlow)"/>
+    <line x1="-45" y1="0" x2="-182" y2="0" stroke="url(#splashGold)" stroke-width="3" opacity="0.6" filter="url(#splashGlow)"/>
+
+    <!-- Intercardinal nodes (smaller) -->
+    <circle cx="141.4" cy="-141.4" r="10" fill="url(#splashGold)" opacity="0.7" filter="url(#splashGlow)"/>
+    <circle cx="141.4" cy="141.4" r="10" fill="url(#splashGold)" opacity="0.7" filter="url(#splashGlow)"/>
+    <circle cx="-141.4" cy="141.4" r="10" fill="url(#splashGold)" opacity="0.7" filter="url(#splashGlow)"/>
+    <circle cx="-141.4" cy="-141.4" r="10" fill="url(#splashGold)" opacity="0.7" filter="url(#splashGlow)"/>
+
+    <!-- Outer geometric frame -->
+    <path d="M 0 -270 L 90 -250 L 170 -190 L 220 -110 L 240 0 L 220 110 L 170 190 L 90 250 L 0 270 L -90 250 L -170 190 L -220 110 L -240 0 L -220 -110 L -170 -190 L -90 -250 Z"
+          fill="none" stroke="url(#splashGold)" stroke-width="1.5" opacity="0.25" filter="url(#splashGlow)"/>
+  </g>
+
+  <!-- Brand name at bottom -->
+  <text x="540" y="1600"
+        text-anchor="middle"
+        font-family="'Helvetica Neue', 'Segoe UI', Arial, sans-serif"
+        font-size="56"
+        font-weight="300"
+        letter-spacing="10"
+        fill="url(#splashGold)"
+        filter="url(#splashGlow)">PLEDGE DATA</text>
+
+  <!-- Tagline -->
+  <text x="540" y="1650"
+        text-anchor="middle"
+        font-family="'Helvetica Neue', 'Segoe UI', Arial, sans-serif"
+        font-size="20"
+        font-weight="300"
+        letter-spacing="4"
+        fill="url(#splashGold)"
+        opacity="0.5">OFFLINE INTELLIGENCE</text>
+
+  <!-- Loading indicator suggestion (bottom) -->
+  <g transform="translate(540, 1780)" opacity="0.4">
+    <circle cx="0" cy="0" r="4" fill="url(#splashGold)">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-15" cy="0" r="4" fill="url(#splashGold)">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="15" cy="0" r="4" fill="url(#splashGold)">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

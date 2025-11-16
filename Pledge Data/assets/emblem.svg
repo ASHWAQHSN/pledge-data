@@ -1,0 +1,72 @@
+<!-- Pledge Data - Gold Emblem (Standalone Logo Symbol) -->
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Premium gold gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4e4c1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#CDAA00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9a7f00;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Radial gradient for depth -->
+    <radialGradient id="goldRadial">
+      <stop offset="0%" style="stop-color:#f4e4c1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#CDAA00;stop-opacity:1" />
+    </radialGradient>
+
+    <!-- Premium glow effect -->
+    <filter id="emblemGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Stronger glow for center -->
+    <filter id="centerGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Central core - data hub -->
+  <circle cx="128" cy="128" r="20" fill="url(#goldRadial)" filter="url(#centerGlow)"/>
+
+  <!-- Inner hexagon - precision geometry -->
+  <path d="M 128 88 L 158.6 103 L 158.6 133 L 128 148 L 97.4 133 L 97.4 103 Z"
+        fill="none" stroke="url(#goldGrad)" stroke-width="2.5" opacity="0.8" filter="url(#emblemGlow)"/>
+
+  <!-- Middle orbital ring -->
+  <circle cx="128" cy="128" r="55" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.6" filter="url(#emblemGlow)"/>
+
+  <!-- Outer orbital ring -->
+  <circle cx="128" cy="128" r="85" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.4" filter="url(#emblemGlow)"/>
+
+  <!-- Data tracking nodes - 4 cardinal points -->
+  <circle cx="128" cy="43" r="8" fill="url(#goldRadial)" filter="url(#emblemGlow)"/>
+  <circle cx="213" cy="128" r="8" fill="url(#goldRadial)" filter="url(#emblemGlow)"/>
+  <circle cx="128" cy="213" r="8" fill="url(#goldRadial)" filter="url(#emblemGlow)"/>
+  <circle cx="43" cy="128" r="8" fill="url(#goldRadial)" filter="url(#emblemGlow)"/>
+
+  <!-- Connection beams (data flow visualization) -->
+  <line x1="128" y1="108" x2="128" y2="51" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.5" filter="url(#emblemGlow)"/>
+  <line x1="148" y1="128" x2="205" y2="128" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.5" filter="url(#emblemGlow)"/>
+  <line x1="128" y1="148" x2="128" y2="205" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.5" filter="url(#emblemGlow)"/>
+  <line x1="108" y1="128" x2="51" y2="128" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.5" filter="url(#emblemGlow)"/>
+
+  <!-- Secondary data nodes - intercardinal points -->
+  <circle cx="158.6" cy="73" r="5" fill="url(#goldGrad)" opacity="0.7" filter="url(#emblemGlow)"/>
+  <circle cx="183" cy="128" r="5" fill="url(#goldGrad)" opacity="0.7" filter="url(#emblemGlow)"/>
+  <circle cx="158.6" cy="183" r="5" fill="url(#goldGrad)" opacity="0.7" filter="url(#emblemGlow)"/>
+  <circle cx="97.4" cy="183" r="5" fill="url(#goldGrad)" opacity="0.7" filter="url(#emblemGlow)"/>
+  <circle cx="73" cy="128" r="5" fill="url(#goldGrad)" opacity="0.7" filter="url(#emblemGlow)"/>
+  <circle cx="97.4" cy="73" r="5" fill="url(#goldGrad)" opacity="0.7" filter="url(#emblemGlow)"/>
+
+  <!-- Subtle outer geometric frame -->
+  <path d="M 128 23 L 168 48 L 208 48 L 233 88 L 233 128 L 233 168 L 208 208 L 168 208 L 128 233 L 88 208 L 48 208 L 23 168 L 23 128 L 23 88 L 48 48 L 88 48 Z"
+        fill="none" stroke="url(#goldGrad)" stroke-width="1" opacity="0.2" filter="url(#emblemGlow)"/>
+</svg>
